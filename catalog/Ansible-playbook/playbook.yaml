@@ -1,0 +1,6 @@
+---
+- name: Copy files to servers
+  hosts: server
+  become: yes  # Если нужны права sudo
+  roles:
+    - copy
